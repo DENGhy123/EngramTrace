@@ -1,4 +1,15 @@
 .DS_Store
-data/
-outputs/
-third_party/octo/
+
+# Keep the data directory, but ignore all dataset contents
+data/*
+!data/.gitkeep
+
+# Keep the third_party directory, but ignore third-party source code
+third_party/*
+!third_party/.gitkeep
+
+# In outputs, only upload PNG images
+outputs/**
+!outputs/**/
+!outputs/*.png
+!outputs/**/*.png
